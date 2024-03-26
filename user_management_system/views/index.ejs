@@ -1,0 +1,31 @@
+<%- include("includes/_header") %>
+
+<main>
+    <div class="new-user">
+        <a href="/new-user">
+            <span class="new">New User</span>
+        </a>
+    </div>
+    <form action="/" method="post">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>UserName</th>
+                    <th>Email_Id</th>
+                    <th>Gender</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+                <%- include("includes/_show") %>
+   
+            </tbody>
+        </table>
+    </form>
+
+</main>
+
+<%- include("includes/_footer") %>

@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.all-user-warpper {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.all-user-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.arrow-icon {
+    margin-right: 5px;
+}
+
+.container-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: left;
+    margin-left: 20px; /* Adjust margin-left */
+}
+
+.form-title {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="radio"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,47 @@
+<%- include("includes/_header") %>
+
+<main class="user-form">
+
+    <div class="new-user">
+        <a href="/">
+            <span class="all-user">All User</span>
+            <span class="arrow-icon">&#8592;</span>
+        </a>
+    </div>
+
+    <div class="container-form">
+        <h3 class="form-title">Update User</h3>
+        <span class="form-description">Use this form to update user</span>
+
+        <form method="post" id="update_user_form" >
+            <div>
+                <input type="hidden" name="id" value="<%= userData._id %>">
+            </div>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="<%= userData.username %>" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="<%= userData.email %>" required>
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" <%= userData.gender=='male' ? 'checked' : '' %> >
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" <%= userData.gender=='female' ? 'checked' : '' %> >
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <label>Status:</label>
+                <input type="radio" id="active" name="status" value="active" <%= userData.status=='active' ? 'checked' : '' %> >
+                <label for="active">Active</label>
+                <input type="radio" id="inActive" name="status"  value="inActive" <%= userData.status=='inActive' ? 'checked' : '' %>>
+                <label for="inactive">Inactive</label>
+            </div>
+            <button type="submit" class="submit-btn">Update</button>
+        </form>
+    </div>
+</main>
+
+<%- include("includes/_footer") %>
